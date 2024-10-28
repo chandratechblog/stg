@@ -41,15 +41,6 @@ prompt_template = ChatPromptTemplate.from_template( """
     {context}
     </context>
     Question: {input}
-
-    **If the user requests to create a ticket:**
-    - "Certainly! Please provide the following details so I can create a support ticket for you:"
-      - **Request/Issue Summary:** What is the nature of the issue or request?
-      - **Contact Information:** Please provide your name, phone number, and email address.
-      - **Priority Level:** How urgent is this issue? (High/Medium/Low)
-
-    **System will automatically include:**
-    - **Date/Time of Request:** [System-generated current date and time]
 """
 )
 
